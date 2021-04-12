@@ -1,10 +1,8 @@
-# Python program to print list
-# without using loop
 
-a = [True, True]
+b = [1,2,3,4,5,6,7,8,9,10,434]
+soma_das_notas = 0
 
-# printing the list using * operator separated
-# by space
-a = len(a) == 2
-print(a)
+for nota in b:
+    soma_das_notas += nota
 
+print(soma_das_notas)
