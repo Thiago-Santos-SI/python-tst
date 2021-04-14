@@ -10,7 +10,7 @@ for i in range(x):
     adj_iguais = False;
     pos = 0
 
-    while n > 0 and not adj_iguais:
+    for i in range(0):
         atual = n % 10
         if atual == anterior:
             adj_iguais = True
@@ -23,6 +23,7 @@ for i in range(x):
         res_s.append(1)
     else:
         res_n.append(1)
+
 
 print(f'com: {len(res_s)}')
 print(f'sem: {len(res_n)}')
