@@ -17,3 +17,9 @@ for i in range(len(list)):
     indice = list[i]
     if indice < media:
        print(i+1, indice)
+
+maior = 0
+for i in list:
+    if list['valor'] > maior:
+        maior = list[i]
+print(maior)
