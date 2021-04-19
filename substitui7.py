@@ -23,4 +23,5 @@ for i in impares:
                 response.append('*')
                 number = []
 
-print(response)
+for i in response:
+    print(i)
