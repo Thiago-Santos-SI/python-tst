@@ -13,7 +13,6 @@ while True:
         }
         list.append(element)
 
-
 while True:
     entrance = input()
     if entrance == 'fim':
@@ -27,12 +26,23 @@ while True:
 
         encontrados = [p for p in list if p['valor'] == menor]
         print(encontrados[0]['hotel'])
-    elif entrance == '1':
-        print()
-    elif entrance == '2':
-        print()
+    elif entrance == 'tamanho':
+        valores = [v['tamanho'] for v in list]
+        maior = 0
+        for i in valores:
+            if i > maior:
+                maior = i
+        encontrados = [p for p in list if p['tamanho'] == maior]
+        print(encontrados[0]['hotel'])
+    elif entrance == 'conforto':
+        valores = [v['conforto'] for v in list]
+        maior = 0
+        for i in valores:
+            if i > maior:
+                maior = i
+        encontrados = [p for p in list if p['conforto'] == maior]
+        print(encontrados[0]['hotel'])
+    elif entrance == 'fim':
+        break
 
-
-#print(list)
-'2000.0,1,16,h1 - 4000.0,4,7,h2 - 1900.0,6,23,h3'
-#'[{'valor': 2000.0, 'tamanho': 1, 'conforto': 16, 'hotel': 'h1'}, {'valor': 4000.0, 'tamanho': 4, 'conforto': 7, 'hotel': 'h2'}, {'valor': 1900.0, 'tamanho': 6, 'conforto': 23, 'hotel': 'h3'}]'
+# teste - '1500.0,1,16,h1 - 4000.0,4,30,h2 - 1900.0,6,23,h3'
