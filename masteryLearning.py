@@ -1,4 +1,4 @@
-def somaMaioresElementos(list):
+def sumTwoMajorElements(list):
     maiorMenor = []
     maior = 0
     for i in list:
@@ -23,10 +23,9 @@ while True:
     n = input('Nota? ')
     list.append(int(n))
     if len(list) >= 2:
-        soma = somaMaioresElementos(list)
+        soma = sumTwoMajorElements(list)
         if soma/2 < 6.5:
             print(f'Média: {(soma / 2):.1f} (cursando)')
-            print(penalizacao)
             print(f'Penalização: {penalizacao[len(penalizacao) - 1]}')
             sumLast = penalizacao[len(penalizacao) - 1] + 0.5
             penalizacao.append(sumLast)
