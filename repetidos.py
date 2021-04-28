@@ -1,4 +1,5 @@
-vogais = ['a', 'e', 'i', 'o', 'u', 'u', 'u', 'e']
+#vogais = ['a', 'e', 'i', 'o', 'u', 'u', 'u', 'e']
+vogais = [1, 2, 3, 3, 3]
 
 res = []
 for i in range(len(vogais)):
