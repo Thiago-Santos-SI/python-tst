@@ -9,16 +9,15 @@ while True:
         result = sequencia.split()
         soma = 0
         for i in result:
-            x = int(i)
-            soma += x
+            soma += int(i)
 
-        if soma > limite * 5:
+        if soma >= limite * 5:
             gastos.append(sequencia)
             break
         else:
             somador = 0
             for i in result:
-                somador += float(i)
+                somador += int(i)
             if somador > limite:
                 gastos.append(sequencia)
 
@@ -34,6 +33,3 @@ for sequencia in gastos:
             string += i + ' ' + '+' + ' '
     print(string)
     string = ''
-
-
-
