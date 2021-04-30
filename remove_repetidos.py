@@ -28,7 +28,6 @@ def remove_repetidos(list):
     return newListTwo
 
 
-lt = [1, 1, 2, 1, 3, 4, 4, 3, 6, 7, 6, 7, 8, 10, 50, 90, 50]
-
+lt = [1, 1, 2, 1, 3, 4, 4, 3, 6, 7, 6, 7, 8, 10, 50, 90, 50, 100]
 x = remove_repetidos(lt)
 print(x)
