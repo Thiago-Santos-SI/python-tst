@@ -24,12 +24,16 @@ def sumTwoMajorElements(list):
         if i > maior:
             maior = i
     maiorMenor.append(maior)
-    segundoMaior = 0
-    for s in list:
-        if s != maior:
-            if s > segundoMaior:
-                segundoMaior = s
-    maiorMenor.append(segundoMaior)
+
+    if len(list) == 2:
+        maiorMenor.append(list[1])
+    else:
+        segundoMaior = 0
+        for s in list:
+            if s != maior:
+                if s > segundoMaior:
+                    segundoMaior = s
+        maiorMenor.append(segundoMaior)
 
     soma = 0
     for nota in maiorMenor:
@@ -37,10 +41,10 @@ def sumTwoMajorElements(list):
     return soma
 
 list = []
-penalizacao = [0]
+penalizacao = [0.0]
 mediaPai = 0
 while True:
-    n = input('Nota? ')
+    n = float(input('Nota? '))
     list.append(int(n))
     if len(list) >= 2:
         soma = sumTwoMajorElements(list)
@@ -74,5 +78,5 @@ for i in validNumbersSort:
 print('===')
 print(f'Notas válidas: {validNumbersStrnig}')
 print(f'Média parcial na unidade: {mediaPai}')
-print(f'Penalizações: {penalizacao[len(penalizacao) - 1]}')
+print(f'Penalizações: {float(penalizacao[len(penalizacao) - 1])}')
 print(f'Média final na unidade: {mediaPai - 1}')
