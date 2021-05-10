@@ -25,6 +25,13 @@ def not_in(element, list):
             return True
 
 
+def meu_in(parametro, lista):
+    for i in lista:
+        if i == parametro:
+            return True
+    return False
+
+
 def rem_rep(list):
     newList = []
     for i in list:

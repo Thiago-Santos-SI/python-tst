@@ -1,0 +1,1 @@
+print('jose azul'.split())
