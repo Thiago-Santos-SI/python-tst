@@ -18,6 +18,9 @@ def descendingOrder(list):
     return maiorElement
 
 def sumTwoMajorElements(list):
+
+    print(list)
+
     maiorMenor = []
     maior = 0
     for i in list:
@@ -37,7 +40,9 @@ def sumTwoMajorElements(list):
 
     soma = 0
     for nota in maiorMenor:
+        print(nota)
         soma += nota
+
     return soma
 
 list = []

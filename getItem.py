@@ -4,18 +4,18 @@ indices = [3, 4, 8, 1]
 
 
 def index_exist(element, list):
-    for indice in range(len(list)):
-        if element == indice:
+    for index in range(len(list)):
+        if element == index:
             return True
 
 
 def get_items(valores, indices):
     newList = []
-    for indice in indices:
-        if index_exist(indice, valores):
+    for index in indices:
+        if index_exist(index, valores):
             for i in range(len(valores)):
                 x = valores[i]
-                if i == indice:
+                if i == index:
                     newList.append(x)
         else:
             newList.append(None)
