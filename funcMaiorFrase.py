@@ -16,7 +16,7 @@ def maior_palavra(frase):
     return stringCheck
 
 
-string = 'eu acredito que seja um bom exemplo'
+string = 'eu acredito que seja um bom acreditooo exemplo'
 
-print(maior_palavra("eu acredito que seja um bom exemplo"))
+print(maior_palavra(string))
 

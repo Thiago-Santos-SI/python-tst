@@ -29,4 +29,3 @@ def lista_so_com_oposto(lista):
 
 
 print(lista_so_com_oposto(lista))
-print(lista)

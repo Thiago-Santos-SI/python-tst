@@ -1,7 +1,3 @@
-numeros = ['joao', 'thiago']
+string = 'esse e um bom exemplo'
 
-list = []
-for i in numeros:
-    string = ''
-    for indice in range(3):
-        list.append(i)
+print(string[len(string) - 1])

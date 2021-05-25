@@ -1,21 +1,33 @@
-string = 'esse e um bom exemplo'
+# a = testando = ['test' 'and']
+
+def put_space(frase, delimitador):
+    list = []
+    if delimitador != ' ':
+        for i in frase:
+            list.append(i)
+        list.append(' ')
+        string = ''
+        for i in list:
+            string += i
+        return string
+    else:
+        return frase
 
 
 def split(frase, delimitador):
-    string = ''
     list = []
-    for index in range(len(frase)):
-        i = frase[index]
-        print(string)
-        if i != ' ':
+    string = ''
+
+    frase = put_space(frase, delimitador)
+
+    for x in range(len(frase)):
+        i = frase[x]
+        if i != delimitador and i != frase[len(frase) - 1]:
             string += i
-        if index == len(frase) + 1:
-            list.append(string)
         else:
             list.append(string)
             string = ''
-
     return list
 
 
-print(split('esse e um bom exemplo', 'a'))
+print(split('teste de fidelidade', 'e'))
