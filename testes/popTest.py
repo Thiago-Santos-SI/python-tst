@@ -1,3 +1,11 @@
-lista = [1, "Prog1", 3.4, 1]
+lista = [("Pedro", 1), ("Tito", -1), ("Zeca", 1), ("Lucca", -1), ("Mirna", 0)]
+lista2 = [("Tito", -1), ("Lucca", -1), ("Mirna", 0), ("Pedro",1), ("Zeca", 1)]
 
-print(lista.pop())
+count = 0
+for i in lista[::-1]:
+    if count != len(lista):
+        lista[count] = i
+    count += 1
+
+print(lista)
+
