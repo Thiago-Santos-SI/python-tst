@@ -1,4 +1,10 @@
-valores = [1,2,3,4,436,6,7,8,9,10,434]
+x = ['b', 'r', 'a', 'd', 'a']
 
-for i in range(valores):
-    print(i)
+
+contador = 0
+for i in range(len(x)):
+    x.pop(contador)
+    contador += 1
+    print(x)
+    if contador == len(x):
+        break

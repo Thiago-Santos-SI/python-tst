@@ -8,3 +8,5 @@ for i in range(len(vogais)):
         res.append(c)
 
 print(res)
+
+
